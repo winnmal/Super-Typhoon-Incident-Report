@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Incident Report — Super Typhoon Yolanda (Haiyan)</title>
+<style>
+:root{--bg:#ecebe6;--paper:#fbfaf6;--ink:#1c1c1a;--mute:#5d5c56;--line:#c9c6bb;--red:#a4161a;--slot:#f0eee6;--stamp:#a4161a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121211;--paper:#1c1c1a;--ink:#ecebe4;--mute:#a09e94;--line:#3b3a36;--red:#e5484d;--slot:#242421;--stamp:#e5484d}}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Georgia,"Times New Roman",serif}
+.page{max-width:880px;margin:24px auto;background:var(--paper);border:1px solid var(--line);padding:32px clamp(16px,4vw,44px);position:relative}
+.mono{font-family:"Courier New",Courier,monospace}
+.head{display:flex;justify-content:space-between;gap:16px;border-bottom:3px double var(--ink);padding-bottom:14px;flex-wrap:wrap}
+.agency{font:600 12px/1.4 "Courier New",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+h1{font-size:clamp(22px,4vw,30px);margin:6px 0 0;line-height:1.2}
+.stamp{border:3px solid var(--stamp);color:var(--stamp);font:700 14px "Courier New",monospace;letter-spacing:.12em;padding:6px 12px;transform:rotate(-4deg);align-self:flex-start;text-align:center}
+h2{font:700 13px "Courier New",monospace;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:5px 10px;margin:30px 0 12px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{width:32%;background:var(--slot);font:600 12px "Courier New",monospace;text-transform:uppercase;letter-spacing:.05em;color:var(--mute)}
+.wrap{overflow-x:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{border:1px solid var(--line);padding:10px;background:var(--slot)}
+.stat b{display:block;font:700 24px "Courier New",monospace;color:var(--red)}
+.stat span{font-size:12px;color:var(--mute)}
+.slots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+figure{margin:0}
+.slot{position:relative;aspect-ratio:4/3;border:2px dashed var(--line);background:var(--slot);display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;overflow:hidden;color:var(--mute);font:12px "Courier New",monospace;padding:10px}
+.slot:hover{border-color:var(--red)}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slot input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.slot .ic{display:block;font-size:26px;margin-bottom:4px}
+figcaption{font-size:12px;margin-top:5px;color:var(--mute)}
+figcaption b{font-family:"Courier New",monospace;color:var(--ink)}
+ol.tl{list-style:none;margin:0;padding:0;border-left:3px solid var(--line)}
+ol.tl li{padding:0 0 14px 16px;position:relative}
+ol.tl li::before{content:"";position:absolute;left:-8px;top:6px;width:13px;height:13px;background:var(--red);border-radius:50%}
+ol.tl time{font:700 12px "Courier New",monospace;color:var(--red);display:block}
+.note{font-size:12px;color:var(--mute);border-left:3px solid var(--red);padding:4px 10px;margin-top:10px}
+[contenteditable]:focus{outline:2px solid var(--red);outline-offset:2px}
+.sig{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:36px}
+.sig div{border-top:1px solid var(--ink);padding-top:4px;font:12px "Courier New",monospace;color:var(--mute)}
+footer{margin-top:28px;font-size:12px;color:var(--mute);border-top:1px solid var(--line);padding-top:10px}
+@media print{body{background:#fff}.page{border:0;margin:0}.slot input{display:none}}
+</style>
+</head>
+<body>
+<main class="page">
+
+<div class="head">
+  <div>
+    <div class="agency">Republic of the Philippines · NDRRMC / OCD<br>Disaster Incident Report — Compiled Summary</div>
+    <h1>Super Typhoon “Yolanda” (Haiyan)</h1>
+    <div class="mono" style="font-size:13px;margin-top:4px">Report No. <span contenteditable="true">YOL-2013-001</span> · Classification: <span contenteditable="true">Natural Disaster / Tropical Cyclone</span></div>
+  </div>
+  <div class="stamp">CLOSED<br>FOR RECORD</div>
+</div>
+
+<h2>Group Members / Prepared By</h2>
+<div class="wrap"><table>
+<tr><th>Member 1</th><td contenteditable="true">Junio, Paul Joshua</td></tr>
+<tr><th>Member 2</th><td contenteditable="true">Launio, Travis Mcklaud</td></tr>
+<tr><th>Member 3</th><td contenteditable="true">Malaluan, Winn Raphael</td></tr>
+<tr><th>Group / Subject</th><td contenteditable="true">ENG 01002 · November 10, 2026</td></tr>
+</table></div>
+
+<h2>1 · Incident Overview</h2>
+<div class="wrap"><table>
+<tr><th>Incident Type</th><td>Super typhoon with storm surge, flooding and widespread structural damage</td></tr>
+<tr><th>Local / Intl. Name</th><td>Yolanda / Haiyan</td></tr>
+<tr><th>Date of Landfall</th><td>8 November 2013</td></tr>
+<tr><th>Point of Entry</th><td>Eastern Visayas (Eastern Samar, then Leyte) — Tacloban City among the hardest hit</td></tr>
+<tr><th>Strength</th><td>10-min sustained winds 235 km/h; 1-min sustained winds 315 km/h</td></tr>
+<tr><th>Left PAR</th><td>9 November 2013, moving toward Vietnam and southern China</td></tr>
+<tr><th>Report Status</th><td>Final figures as released by NDRRMC; later estimates of fatalities run higher</td></tr>
+</table></div>
+
+<h2>2 · Summary of Incident</h2>
+<p>Yolanda intensified into a super typhoon about 48 hours before landfall and struck the central Philippines on 8 November 2013 with devastating winds and a tsunami-like storm surge. It is recorded as the deadliest and costliest typhoon in Philippine history. Communities across Eastern Visayas, Western Visayas and Palawan suffered massive loss of life, destruction of homes, collapse of communications and power, and the loss of livelihoods.</p>
+
+<h2>3 · Casualties</h2>
+<div class="grid">
+  <div class="stat"><b contenteditable="true">6,300</b><span>Confirmed dead (NDRRMC)</span></div>
+  <div class="stat"><b contenteditable="true">28,689</b><span>Injured</span></div>
+  <div class="stat"><b contenteditable="true">1,061</b><span>Missing</span></div>
+  <div class="stat"><b contenteditable="true">9.53 M</b><span>Persons affected (~2.1 M families, DSWD)</span></div>
+</div>
+<div class="note">Early counts were contested: on 13 Nov 2013 the government reported 4,460 dead, while initial presidential estimates were 2,000–2,500. Some humanitarian organizations estimate about 7,000 deaths.</div>
+
+<h2>4 · Losses &amp; Damage</h2>
+<div class="wrap"><table>
+<tr><th>Total Damage</th><td>₱89.5 billion (NDRRMC)</td></tr>
+<tr><th>Infrastructure</th><td>₱9.58 billion — roads, bridges, ports, power and communication lines</td></tr>
+<tr><th>Productive Sector</th><td>₱21.83 billion — agriculture, fisheries, coconut farms, commerce</td></tr>
+<tr><th>Social Sector</th><td>₱55.11 billion — housing, schools, hospitals, public buildings</td></tr>
+<tr><th>Cross-Sectoral</th><td>₱3.07 billion</td></tr>
+<tr><th>Scale of Impact</th><td>Over 16 million people across 44 provinces and 12,000+ barangays affected; more than 4 million displaced (per Direct Relief)</td></tr>
+<tr><th>Property Lost</th><td contenteditable="true">[Add specific items: homes, vessels, vehicles, records, equipment…]</td></tr>
+</table></div>
+
+<h2>5 · Timeline of Events</h2>
+<ol class="tl">
+  <li><time>~6 NOV 2013</time>Typhoon passes Micronesia as a typhoon; government begins preparations.</li>
+  <li><time>7 NOV 2013</time>Enters PAR and is named Yolanda; Public Storm Warning Signal No. 4 issued along its path.</li>
+  <li><time>8 NOV 2013 — LANDFALL</time>Makes landfall in Eastern Visayas; storm surge inundates coastal communities, Tacloban City devastated. Weakens in the evening after crossing the country.</li>
+  <li><time>9 NOV 2013</time>Exits PAR toward Vietnam and southern China; storm signals lowered in some areas.</li>
+  <li><time>11 NOV 2013</time>Early damage estimates reach as high as ₱650 billion (later official tally far lower).</li>
+  <li><time>13 NOV 2013</time>Government reports 4,460 dead; international relief operations ramp up.</li>
+  <li><time>LATER</time>Official toll climbs to 6,300 dead; recovery and rehabilitation runs for years, with survivors protesting its pace.</li>
+</ol>
+
+<h2>6 · Photographic Evidence</h2>
+<p style="font-size:13px;color:var(--mute);margin-top:0">Click any slot to replace its image. Replacements will stay in your browser only. Captions are editable.</p>
+<div class="slots" id="slots"></div>
+
+<h2>7 · Response &amp; Actions Taken</h2>
+<div class="wrap"><table>
+<tr><th>Government</th><td>Pre-landfall warnings, evacuation, deployment of AFP/PNP, DSWD relief to millions of families</td></tr>
+<tr><th>International</th><td>Large-scale humanitarian response, including relief flights and funding from many countries</td></tr>
+<tr><th>Civil Society</th><td>Shelter kits, food, livelihood support and rebuilding projects by NGOs and private groups</td></tr>
+<tr><th>Outstanding Needs</th><td contenteditable="true">[Housing, livelihood, trauma support, accountability for aid…]</td></tr>
+</table></div>
+
+<h2>8 · Recommendations</h2>
+<ol>
+  <li>Strengthen early warning and evacuation, especially for storm-surge-prone coasts.</li>
+  <li>Build stronger, more resilient housing and critical infrastructure.</li>
+  <li>Improve casualty tracking and transparency in aid release.</li>
+</ol>
+
+<div class="sig">
+  <div contenteditable="true">Junio / 11/10/26</div>
+  <div contenteditable="true">Launio / 11/10/26</div>
+  <div contenteditable="true">Malaluan / 11/10/26</div>
+</div>
+
+<footer>Figures drawn from NDRRMC, DSWD and published news and humanitarian reports.</footer>
+</main>
+
+<script>
+(function(){
+  var imgs=[
+   ["https://i.ibb.co/CKw3BbV7/yolanda-help-2018-11-08-17-40-09.jpg","Aftermath in affected communities"],
+   ["https://i.ibb.co/39Kf670w/images.jpg","Damaged structures"],
+   ["https://i.ibb.co/GvZrWj2N/typhon-new.jpg","Typhoon and affected area"],
+   ["https://i.ibb.co/cKCM55rb/12-ABC-Australia.jpg","Widespread devastation"],
+   ["https://i.ibb.co/KxZx4pGs/ph-15104-53949-1.jpg","Relief operations"],
+   ["https://i.ibb.co/gZ986Tmd/Yolanda-1640-7043-3.jpg","Recovery and rebuilding"]];
+  var host=document.getElementById("slots");
+  imgs.forEach(function(d,i){
+    var l=d[1];
+    var f=document.createElement("figure");
+    f.innerHTML='<label class="slot"><span><span class="ic">📷</span>Click to add image</span><img src="'+d[0]+'" alt="'+l+'"><input type="file" accept="image/*"></label>'+
+      '<figcaption><b>Fig. '+(i+1)+'</b> — <span contenteditable="true">'+l+'</span></figcaption>';
+    var inp=f.querySelector("input"),slot=f.querySelector(".slot"),im0=f.querySelector("img");
+    im0.addEventListener("error",function(){im0.remove();});
+    inp.addEventListener("change",function(){
+      var file=inp.files&&inp.files[0];if(!file)return;
+      var r=new FileReader();
+      r.onload=function(){
+        var old=slot.querySelector("img");if(old)old.remove();
+        var im=document.createElement("img");im.src=r.result;im.alt=l;slot.insertBefore(im,inp);
+      };
+      r.readAsDataURL(file);
+    });
+    host.appendChild(f);
+  });
+})();
+</script>
+</body>
+</html>
